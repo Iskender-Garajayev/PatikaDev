@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import './App.css';
+import Counter from './component/Counter';
 
 function App() {
   const [name, setName] = useState('Mehmet')
@@ -21,7 +22,6 @@ function App() {
 
 
       <hr />
-      <br />
       <h2>Address</h2>
       <div>{address.title} {address.zipcode}</div>
 
@@ -30,7 +30,8 @@ function App() {
       <button onClick={()=> setAddress({...address, title:'Gorukle' })} >Change Address</button>
       {/* <button onClick={()=> setAddress({title:'Gorukle', zipcode: 33333 })} >Change Address</button> */}
 
-
+      <hr />
+      <Counter/>
 
     </div>
     
