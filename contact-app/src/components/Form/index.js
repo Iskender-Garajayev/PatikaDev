@@ -8,10 +8,17 @@ function Form() {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  
+  const onSubmit = (e) =>{
+    e.preventDefault()
+    if (form.fullname === "" || form.phone_number ===""){
+      return false;
+    }
+    console.log(form)
+  } 
+
 
   return (
-    <div>
+    <form onSubmit={onSubmit}>
       <div>
         <input name='fullname' placeholder='Full Name' onChange={onChangeInput}/>
       </div>
@@ -21,7 +28,7 @@ function Form() {
       </div>
 
       <button>Add</button>
-    </div>
+    </form>
   )
 }
 
