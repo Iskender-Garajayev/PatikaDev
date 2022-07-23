@@ -26,11 +26,11 @@ function Form({addContacts, contacts}) {
       </div>
 
       <div>
-        <input name="phone_number" placeholder="Phone Number" value={form.phone_number} onChange={onChangeInput}  />
+        <input className=" opacity-20 w-48 h-8 mt-1 rounded-md" name="phone_number" placeholder="  Phone Number" value={form.phone_number} onChange={onChangeInput}  />
       </div>
 
       <div>
-        <button>ADD</button>
+        <button className=" bg-orange-500 w-20 h-8 mt-1 ml-9 rounded-md">ADD</button>
       </div>
     </form>
   );

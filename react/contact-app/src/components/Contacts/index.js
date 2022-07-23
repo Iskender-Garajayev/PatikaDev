@@ -25,11 +25,11 @@ function Contacts() {
   },[contacts])
 
   return (
-    <div className=' block' >
-      <div className=' m-auto'>
+    <div className='grid grid-rows-3 grid-flow-col gap-4' >
+      <div className='row-span-3'>
         <List contacts={contacts}/>
       </div>
-      <div className='form'>
+      <div className=' items-center  col-span-2 m-auto mt-96 '>
         <Form addContacts={setContacts} contacts={contacts}/>
       </div>
     </div>
