@@ -25,8 +25,8 @@ function Contacts() {
   },[contacts])
 
   return (
-    <div className='' >
-      <div className='list'>
+    <div className=' block' >
+      <div className=' m-auto'>
         <List contacts={contacts}/>
       </div>
       <div className='form'>
