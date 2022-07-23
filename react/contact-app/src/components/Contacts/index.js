@@ -29,7 +29,7 @@ function Contacts() {
       <div className='row-span-3'>
         <List contacts={contacts}/>
       </div>
-      <div className=' items-center  col-span-2 m-auto mt-96 '>
+      <div className=' items-center  col-span-2 m-auto mt-96'>
         <Form addContacts={setContacts} contacts={contacts}/>
       </div>
     </div>

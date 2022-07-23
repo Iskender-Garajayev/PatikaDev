@@ -25,12 +25,12 @@ function Form({addContacts, contacts}) {
         <input name="fullname" placeholder="Full Name" value={form.fullname} onChange={onChangeInput} />
       </div>
 
-      <div>
-        <input className=" opacity-20 w-48 h-8 mt-1 rounded-md" name="phone_number" placeholder="  Phone Number" value={form.phone_number} onChange={onChangeInput}  />
+      <div className=" bg-none">
+        <input className=" w-48 h-8 mt-1 rounded-md" name="phone_number" placeholder="  Phone Number" value={form.phone_number} onChange={onChangeInput}  />
       </div>
 
       <div>
-        <button className=" bg-orange-500 w-20 h-8 mt-1 ml-9 rounded-md">ADD</button>
+        <button className=" bg-orange-500 w-20 h-6 mt-1 ml-24 rounded-md ">ADD</button>
       </div>
     </form>
   );
