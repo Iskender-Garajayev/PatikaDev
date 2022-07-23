@@ -14,7 +14,7 @@ function List({ contacts }) {
   });
   return (
     <div>
-      <input
+      <input className=" bg-none"
         placeholder="Filter Contact"
         value={filterText}
         onChange={(e) => setfilterText(e.target.value)}

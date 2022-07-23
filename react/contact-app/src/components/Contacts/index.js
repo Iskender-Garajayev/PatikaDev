@@ -25,11 +25,11 @@ function Contacts() {
   },[contacts])
 
   return (
-    <div >
-      <div>
-      <List contacts={contacts}/>
+    <div className='' >
+      <div className='list'>
+        <List contacts={contacts}/>
       </div>
-      <div>
+      <div className='form'>
         <Form addContacts={setContacts} contacts={contacts}/>
       </div>
     </div>
