@@ -22,7 +22,7 @@ function Form({addContacts, contacts}) {
   return (
     <form onSubmit={onSubmit}>
       <div>
-        <input name="fullname" placeholder="Full Name" value={form.fullname} onChange={onChangeInput} />
+        <input className="w-48 h-8 mt-1 rounded-md"  name="fullname" placeholder="  Full Name" value={form.fullname} onChange={onChangeInput} />
       </div>
 
       <div className=" bg-none">

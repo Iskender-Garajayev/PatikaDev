@@ -14,15 +14,15 @@ function List({ contacts }) {
   });
   return (
     <div>
-      <input className=" bg-none"
-        placeholder="Filter Contact"
+      <input className=" w-56 h-8 mt-1 rounded-md"
+        placeholder="  Filter Contact"
         value={filterText}
         onChange={(e) => setfilterText(e.target.value)}
       />
       {filtered.map((contacts, i) => (
-        <li key={i}>
-          <span>{contacts.fullname}</span>
-          <span>{contacts.phone_number}</span>
+        <li className=" flex justify-between w-56 mt-1 rounded-md h-7  bg-blue-200" key={i}>
+          <span >{contacts.fullname}</span>
+          <span >{contacts.phone_number}</span>
         </li>
       ))}
     </div>

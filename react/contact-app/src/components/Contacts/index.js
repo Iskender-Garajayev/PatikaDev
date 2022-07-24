@@ -26,7 +26,7 @@ function Contacts() {
 
   return (
     <div className='grid grid-rows-3 grid-flow-col gap-4' >
-      <div className='row-span-3'>
+      <div className=' ml-40 mt-32 row-span-3 '>
         <List contacts={contacts}/>
       </div>
       <div className=' items-center  col-span-2 m-auto mt-96'>
